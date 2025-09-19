@@ -1,0 +1,8 @@
+//to select from dropdown by name
+WebElement ele = driver.findElement(By.id(":R2q2rl676:--input"));
+        Select sc = new Select(ele);
+        sc.selectByVisibleText("India");
+//to select from dropdown using index 
+WebElement dropdownElement = driver.findElement(By.id("field-NumberOfEmployees"));
+            Select select = new Select(dropdownElement);
+            select.selectByIndex(3);
